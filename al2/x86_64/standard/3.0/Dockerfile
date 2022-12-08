@@ -455,6 +455,8 @@ RUN rbenv install $RUBY_27_VERSION && rm -rf /tmp/* && rbenv global $RUBY_27_VER
 ENV GOLANG_14_VERSION="1.14.15"
 RUN goenv install $GOLANG_14_VERSION && rm -rf /tmp/* && goenv global  $GOLANG_14_VERSION
 
+echo "Hello-WORLD"
+
 #Php 7.4
 ENV PHP_74_VERSION="7.4.29"
 COPY tools/runtime_configs/php/$PHP_74_VERSION /root/.phpenv/plugins/php-build/share/php-build/definitions/$PHP_74_VERSION
